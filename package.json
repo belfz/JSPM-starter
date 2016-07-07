@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "jspm install",
-    "start": "lite-server",
+    "start": "lite-server -c lite-server-config.json",
     "jspm:reinit": "jspm init -p",
     "jspm:build-prod": "jspm bundle src/main dist/build.js",
     "jspm:install": "jspm install"
