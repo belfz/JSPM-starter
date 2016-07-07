@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>SystemJS</title>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    
+    <!--  production build files -->
+    <script src="dist/build.js"></script>
+    <script src="dist/build.js.map"></script>
+    <!-- /production build files -->
+    
+    <script>
+      System
+        .import('src/main')
+        .then(null, console.error.bind(console));
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
